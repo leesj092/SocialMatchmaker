@@ -8,12 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* TinderFrontendTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TinderFrontendTests.m */; };
+		01D3DCAEFAF002465236C498 /* libPods-TinderFrontend.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0133FB4CEC86962DBC9BC51 /* libPods-TinderFrontend.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		3164D3D72871E98059A6BC49 /* libPods-TinderFrontend-TinderFrontendTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C72473EE6B82079D601A388 /* libPods-TinderFrontend-TinderFrontendTests.a */; };
-		76B651330300AA891820AC5F /* libPods-TinderFrontend.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB546A19EEABA9028C02B0C /* libPods-TinderFrontend.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		C8F91A0829D4F06D00D020B3 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8F919F429D4EDB000D020B3 /* AntDesign.ttf */; };
+		C8F91A0929D4F06D00D020B3 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8F919ED29D4EDB000D020B3 /* Entypo.ttf */; };
+		C8F91A0A29D4F06D00D020B3 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8F919EF29D4EDB000D020B3 /* EvilIcons.ttf */; };
+		C8F91A0B29D4F06D00D020B3 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8F919F529D4EDB000D020B3 /* Feather.ttf */; };
+		C8F91A0C29D4F06D00D020B3 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8F919EB29D4EDB000D020B3 /* FontAwesome.ttf */; };
+		C8F91A0D29D4F06D00D020B3 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8F919F029D4EDB000D020B3 /* FontAwesome5_Brands.ttf */; };
+		C8F91A0E29D4F06D00D020B3 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8F919F629D4EDB100D020B3 /* FontAwesome5_Regular.ttf */; };
+		C8F91A0F29D4F06D00D020B3 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8F919EA29D4EDB000D020B3 /* FontAwesome5_Solid.ttf */; };
+		C8F91A1029D4F06D00D020B3 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8F919E829D4EDB000D020B3 /* Fontisto.ttf */; };
+		C8F91A1129D4F06D00D020B3 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8F919EE29D4EDB000D020B3 /* Foundation.ttf */; };
+		C8F91A1329D4F06D00D020B3 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8F919F729D4EDB100D020B3 /* MaterialCommunityIcons.ttf */; };
+		C8F91A1429D4F06D00D020B3 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8F919F129D4EDB000D020B3 /* MaterialIcons.ttf */; };
+		C8F91A1529D4F06D00D020B3 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8F919F229D4EDB000D020B3 /* Octicons.ttf */; };
+		C8F91A1629D4F06D00D020B3 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8F919EC29D4EDB000D020B3 /* SimpleLineIcons.ttf */; };
+		C8F91A1729D4F06D00D020B3 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8F919F329D4EDB000D020B3 /* Zocial.ttf */; };
+		C8F91A1829D4F38400D020B3 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8F919E929D4EDB000D020B3 /* Ionicons.ttf */; };
+		E8C996EB91DF3548C03B778A /* libPods-TinderFrontend-TinderFrontendTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7001EB76D8116EEA1494721 /* libPods-TinderFrontend-TinderFrontendTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,20 +46,36 @@
 		00E356EE1AD99517003FC87E /* TinderFrontendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinderFrontendTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* TinderFrontendTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TinderFrontendTests.m; sourceTree = "<group>"; };
+		096231C28147F05BA592CC0A /* Pods-TinderFrontend-TinderFrontendTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderFrontend-TinderFrontendTests.debug.xcconfig"; path = "Target Support Files/Pods-TinderFrontend-TinderFrontendTests/Pods-TinderFrontend-TinderFrontendTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0E97A9B5EF4A73C715D8C979 /* Pods-TinderFrontend-TinderFrontendTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderFrontend-TinderFrontendTests.release.xcconfig"; path = "Target Support Files/Pods-TinderFrontend-TinderFrontendTests/Pods-TinderFrontend-TinderFrontendTests.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* TinderFrontend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderFrontend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = TinderFrontend/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = TinderFrontend/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TinderFrontend/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TinderFrontend/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TinderFrontend/main.m; sourceTree = "<group>"; };
-		3AB546A19EEABA9028C02B0C /* libPods-TinderFrontend.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TinderFrontend.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4561C91C66DCC94821313994 /* Pods-TinderFrontend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderFrontend.release.xcconfig"; path = "Target Support Files/Pods-TinderFrontend/Pods-TinderFrontend.release.xcconfig"; sourceTree = "<group>"; };
-		646F2AB0C0AEAAB9D63C5011 /* Pods-TinderFrontend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderFrontend.debug.xcconfig"; path = "Target Support Files/Pods-TinderFrontend/Pods-TinderFrontend.debug.xcconfig"; sourceTree = "<group>"; };
-		6C72473EE6B82079D601A388 /* libPods-TinderFrontend-TinderFrontendTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TinderFrontend-TinderFrontendTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = TinderFrontend/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A502C81F7D99EB2DAF3ED90A /* Pods-TinderFrontend-TinderFrontendTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderFrontend-TinderFrontendTests.release.xcconfig"; path = "Target Support Files/Pods-TinderFrontend-TinderFrontendTests/Pods-TinderFrontend-TinderFrontendTests.release.xcconfig"; sourceTree = "<group>"; };
+		B0133FB4CEC86962DBC9BC51 /* libPods-TinderFrontend.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TinderFrontend.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8F919E829D4EDB000D020B3 /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
+		C8F919E929D4EDB000D020B3 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		C8F919EA29D4EDB000D020B3 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		C8F919EB29D4EDB000D020B3 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		C8F919EC29D4EDB000D020B3 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+		C8F919ED29D4EDB000D020B3 /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		C8F919EE29D4EDB000D020B3 /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		C8F919EF29D4EDB000D020B3 /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		C8F919F029D4EDB000D020B3 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		C8F919F129D4EDB000D020B3 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		C8F919F229D4EDB000D020B3 /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		C8F919F329D4EDB000D020B3 /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		C8F919F429D4EDB000D020B3 /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		C8F919F529D4EDB000D020B3 /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		C8F919F629D4EDB100D020B3 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		C8F919F729D4EDB100D020B3 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		DDC8B3D1B3747781479AC615 /* Pods-TinderFrontend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderFrontend.debug.xcconfig"; path = "Target Support Files/Pods-TinderFrontend/Pods-TinderFrontend.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F86957E0D3625FF650D7302B /* Pods-TinderFrontend-TinderFrontendTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderFrontend-TinderFrontendTests.debug.xcconfig"; path = "Target Support Files/Pods-TinderFrontend-TinderFrontendTests/Pods-TinderFrontend-TinderFrontendTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EFE7A24DC083D3155F3D23AC /* Pods-TinderFrontend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderFrontend.release.xcconfig"; path = "Target Support Files/Pods-TinderFrontend/Pods-TinderFrontend.release.xcconfig"; sourceTree = "<group>"; };
+		F7001EB76D8116EEA1494721 /* libPods-TinderFrontend-TinderFrontendTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TinderFrontend-TinderFrontendTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3164D3D72871E98059A6BC49 /* libPods-TinderFrontend-TinderFrontendTests.a in Frameworks */,
+				E8C996EB91DF3548C03B778A /* libPods-TinderFrontend-TinderFrontendTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76B651330300AA891820AC5F /* libPods-TinderFrontend.a in Frameworks */,
+				01D3DCAEFAF002465236C498 /* libPods-TinderFrontend.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +118,7 @@
 		13B07FAE1A68108700A75B9A /* TinderFrontend */ = {
 			isa = PBXGroup;
 			children = (
+				C8F9191429D4E06500D020B3 /* Fonts */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -100,8 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				3AB546A19EEABA9028C02B0C /* libPods-TinderFrontend.a */,
-				6C72473EE6B82079D601A388 /* libPods-TinderFrontend-TinderFrontendTests.a */,
+				B0133FB4CEC86962DBC9BC51 /* libPods-TinderFrontend.a */,
+				F7001EB76D8116EEA1494721 /* libPods-TinderFrontend-TinderFrontendTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -140,12 +173,35 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				646F2AB0C0AEAAB9D63C5011 /* Pods-TinderFrontend.debug.xcconfig */,
-				4561C91C66DCC94821313994 /* Pods-TinderFrontend.release.xcconfig */,
-				F86957E0D3625FF650D7302B /* Pods-TinderFrontend-TinderFrontendTests.debug.xcconfig */,
-				A502C81F7D99EB2DAF3ED90A /* Pods-TinderFrontend-TinderFrontendTests.release.xcconfig */,
+				DDC8B3D1B3747781479AC615 /* Pods-TinderFrontend.debug.xcconfig */,
+				EFE7A24DC083D3155F3D23AC /* Pods-TinderFrontend.release.xcconfig */,
+				096231C28147F05BA592CC0A /* Pods-TinderFrontend-TinderFrontendTests.debug.xcconfig */,
+				0E97A9B5EF4A73C715D8C979 /* Pods-TinderFrontend-TinderFrontendTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C8F9191429D4E06500D020B3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C8F919F429D4EDB000D020B3 /* AntDesign.ttf */,
+				C8F919ED29D4EDB000D020B3 /* Entypo.ttf */,
+				C8F919EF29D4EDB000D020B3 /* EvilIcons.ttf */,
+				C8F919F529D4EDB000D020B3 /* Feather.ttf */,
+				C8F919EB29D4EDB000D020B3 /* FontAwesome.ttf */,
+				C8F919F029D4EDB000D020B3 /* FontAwesome5_Brands.ttf */,
+				C8F919F629D4EDB100D020B3 /* FontAwesome5_Regular.ttf */,
+				C8F919EA29D4EDB000D020B3 /* FontAwesome5_Solid.ttf */,
+				C8F919E829D4EDB000D020B3 /* Fontisto.ttf */,
+				C8F919EE29D4EDB000D020B3 /* Foundation.ttf */,
+				C8F919E929D4EDB000D020B3 /* Ionicons.ttf */,
+				C8F919F729D4EDB100D020B3 /* MaterialCommunityIcons.ttf */,
+				C8F919F129D4EDB000D020B3 /* MaterialIcons.ttf */,
+				C8F919F229D4EDB000D020B3 /* Octicons.ttf */,
+				C8F919EC29D4EDB000D020B3 /* SimpleLineIcons.ttf */,
+				C8F919F329D4EDB000D020B3 /* Zocial.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,12 +211,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "TinderFrontendTests" */;
 			buildPhases = (
-				9C975A68D6C6089293DE663D /* [CP] Check Pods Manifest.lock */,
+				86266B983C5AFAEA9F038933 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				ED443E1D44051204DC022681 /* [CP] Embed Pods Frameworks */,
-				95218546EFCF3A0FCBC3CD6A /* [CP] Copy Pods Resources */,
+				2E5931D32476AF673055FB92 /* [CP] Embed Pods Frameworks */,
+				E05150297DD84EF2BC7E18E8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,14 +232,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "TinderFrontend" */;
 			buildPhases = (
-				95CA70F615E4FFA35094737E /* [CP] Check Pods Manifest.lock */,
+				C034F2D8126BFE7F8F346874 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				6884BCDD26491234CCE353F9 /* [CP] Embed Pods Frameworks */,
-				EC9CAE1D1DAEF35B9775671A /* [CP] Copy Pods Resources */,
+				14D35E465F04B468D5B8DA45 /* [CP] Embed Pods Frameworks */,
+				75C09CDD32F4E620EF7ED8B9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -242,6 +298,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8F91A1829D4F38400D020B3 /* Ionicons.ttf in Resources */,
+				C8F91A0829D4F06D00D020B3 /* AntDesign.ttf in Resources */,
+				C8F91A0929D4F06D00D020B3 /* Entypo.ttf in Resources */,
+				C8F91A0A29D4F06D00D020B3 /* EvilIcons.ttf in Resources */,
+				C8F91A0B29D4F06D00D020B3 /* Feather.ttf in Resources */,
+				C8F91A0C29D4F06D00D020B3 /* FontAwesome.ttf in Resources */,
+				C8F91A0D29D4F06D00D020B3 /* FontAwesome5_Brands.ttf in Resources */,
+				C8F91A0E29D4F06D00D020B3 /* FontAwesome5_Regular.ttf in Resources */,
+				C8F91A0F29D4F06D00D020B3 /* FontAwesome5_Solid.ttf in Resources */,
+				C8F91A1029D4F06D00D020B3 /* Fontisto.ttf in Resources */,
+				C8F91A1129D4F06D00D020B3 /* Foundation.ttf in Resources */,
+				C8F91A1329D4F06D00D020B3 /* MaterialCommunityIcons.ttf in Resources */,
+				C8F91A1429D4F06D00D020B3 /* MaterialIcons.ttf in Resources */,
+				C8F91A1529D4F06D00D020B3 /* Octicons.ttf in Resources */,
+				C8F91A1629D4F06D00D020B3 /* SimpleLineIcons.ttf in Resources */,
+				C8F91A1729D4F06D00D020B3 /* Zocial.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
@@ -266,9 +338,9 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		6884BCDD26491234CCE353F9 /* [CP] Embed Pods Frameworks */ = {
+		14D35E465F04B468D5B8DA45 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
+			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
@@ -283,46 +355,41 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TinderFrontend/Pods-TinderFrontend-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		95218546EFCF3A0FCBC3CD6A /* [CP] Copy Pods Resources */ = {
+		2E5931D32476AF673055FB92 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TinderFrontend-TinderFrontendTests/Pods-TinderFrontend-TinderFrontendTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TinderFrontend-TinderFrontendTests/Pods-TinderFrontend-TinderFrontendTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TinderFrontend-TinderFrontendTests/Pods-TinderFrontend-TinderFrontendTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TinderFrontend-TinderFrontendTests/Pods-TinderFrontend-TinderFrontendTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75C09CDD32F4E620EF7ED8B9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TinderFrontend/Pods-TinderFrontend-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TinderFrontend-TinderFrontendTests/Pods-TinderFrontend-TinderFrontendTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TinderFrontend/Pods-TinderFrontend-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TinderFrontend-TinderFrontendTests/Pods-TinderFrontend-TinderFrontendTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TinderFrontend/Pods-TinderFrontend-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		95CA70F615E4FFA35094737E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TinderFrontend-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9C975A68D6C6089293DE663D /* [CP] Check Pods Manifest.lock */ = {
+		86266B983C5AFAEA9F038933 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -344,38 +411,43 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EC9CAE1D1DAEF35B9775671A /* [CP] Copy Pods Resources */ = {
+		C034F2D8126BFE7F8F346874 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TinderFrontend/Pods-TinderFrontend-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TinderFrontend-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E05150297DD84EF2BC7E18E8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TinderFrontend-TinderFrontendTests/Pods-TinderFrontend-TinderFrontendTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TinderFrontend/Pods-TinderFrontend-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TinderFrontend-TinderFrontendTests/Pods-TinderFrontend-TinderFrontendTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TinderFrontend/Pods-TinderFrontend-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		ED443E1D44051204DC022681 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TinderFrontend-TinderFrontendTests/Pods-TinderFrontend-TinderFrontendTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TinderFrontend-TinderFrontendTests/Pods-TinderFrontend-TinderFrontendTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TinderFrontend-TinderFrontendTests/Pods-TinderFrontend-TinderFrontendTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TinderFrontend-TinderFrontendTests/Pods-TinderFrontend-TinderFrontendTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -430,7 +502,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F86957E0D3625FF650D7302B /* Pods-TinderFrontend-TinderFrontendTests.debug.xcconfig */;
+			baseConfigurationReference = 096231C28147F05BA592CC0A /* Pods-TinderFrontend-TinderFrontendTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -457,7 +529,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A502C81F7D99EB2DAF3ED90A /* Pods-TinderFrontend-TinderFrontendTests.release.xcconfig */;
+			baseConfigurationReference = 0E97A9B5EF4A73C715D8C979 /* Pods-TinderFrontend-TinderFrontendTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -481,7 +553,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 646F2AB0C0AEAAB9D63C5011 /* Pods-TinderFrontend.debug.xcconfig */;
+			baseConfigurationReference = DDC8B3D1B3747781479AC615 /* Pods-TinderFrontend.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -508,7 +580,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4561C91C66DCC94821313994 /* Pods-TinderFrontend.release.xcconfig */;
+			baseConfigurationReference = EFE7A24DC083D3155F3D23AC /* Pods-TinderFrontend.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

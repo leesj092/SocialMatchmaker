@@ -4,7 +4,7 @@ import {
 } from 'react-native';
 import { DefaultTheme } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Icon from 'react-native-ionicons';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 import { ChatScene } from './chat-scene';
 
 export const MainScene = () => {
@@ -25,7 +25,7 @@ export const MainScene = () => {
                         iconName = focused ? 'person' : 'person-outline';
                     }
 
-                    return <Icon name={iconName} size={size} color={color} />;
+                    return <Ionicons name={iconName} size={size} color={color} />;
                 },
                 tabBarActiveTintColor: 'black',
                 tabBarInactiveTintColor: 'black',
