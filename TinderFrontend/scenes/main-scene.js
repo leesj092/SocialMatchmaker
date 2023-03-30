@@ -6,6 +6,8 @@ import { DefaultTheme } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { ChatScene } from './chat-scene';
+import { PeopleScene } from './people-scene';
+import { ProfileScene } from './profile-scene';
 
 export const MainScene = () => {
 
@@ -40,12 +42,12 @@ export const MainScene = () => {
             />
             <Tab.Screen
                 name="People"
-                component={ChatScene}
+                component={PeopleScene}
                 options={{ headerShown: false }}
             />
             <Tab.Screen
                 name="Profile"
-                component={ChatScene}
+                component={ProfileScene}
                 options={{ headerShown: false }}
             />
         </Tab.Navigator>
