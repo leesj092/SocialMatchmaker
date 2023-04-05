@@ -37,12 +37,12 @@ export const MainScene = () => {
             })}>
             <Tab.Screen
                 name="Chats"
-                component={ChatScene}
+                component={PeopleScene}
                 options={{ headerShown: false }}
             />
             <Tab.Screen
                 name="People"
-                component={PeopleScene}
+                component={ChatScene}
                 options={{ headerShown: false }}
             />
             <Tab.Screen

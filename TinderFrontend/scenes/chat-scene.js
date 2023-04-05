@@ -6,7 +6,7 @@ import {
 export const ChatScene = () => {
     return (
         <SafeAreaView>
-            <Text>Chat Screen</Text>
+            <Text>People Screen</Text>
         </SafeAreaView>
     );
 };
