@@ -9,6 +9,7 @@ import {
     View
 } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import { useNavigation } from '@react-navigation/native';
 
 const DATA = [
     {
@@ -50,15 +51,21 @@ const DATA = [
 ];
 
 export const ChatList = () => {
+    const navigation = useNavigation();
+    
     return (
         <FlatList
             data={DATA}
             renderItem={({ item }) =>
-                <TouchableOpacity style={styles.chatBox}>
+                <TouchableOpacity style={styles.chatBox} 
+                    onPress={() =>
+                        navigation.navigate('IndividualChatScene')
+                    }
+                >
                     <Ionicons name={"person"} size={40} color={"gray"} />
                     <View style={styles.chatInfo}>
                         <Text>John Doe</Text>
-                        <Text style={{color:"gray", marginTop: 3}}>Thanks for connecting with me...</Text>
+                        <Text style={{ color: "gray", marginTop: 3 }}>Thanks for connecting with me...</Text>
                     </View>
                     <View
                         style={{

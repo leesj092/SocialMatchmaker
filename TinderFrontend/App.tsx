@@ -11,6 +11,7 @@ import { DefaultTheme, NavigationContainer } from '@react-navigation/native';
 import 'react-native-gesture-handler';
 import { createStackNavigator } from '@react-navigation/stack';
 import { MainScene } from './scenes/main-scene';
+import { IndividualChatScene } from './scenes/individual-chat-scene';
 
 function App(): JSX.Element {
 
@@ -22,6 +23,7 @@ function App(): JSX.Element {
         initialRouteName="MainScene"
         screenOptions={{ headerShown: false }}>
         <Stack.Screen name="MainScene" component={MainScene} />
+        <Stack.Screen name="IndividualChatScene" component={IndividualChatScene} />
       </Stack.Navigator>
     </NavigationContainer>
   );
