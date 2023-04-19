@@ -13,6 +13,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { MainScene } from './scenes/main-scene';
 import { IndividualChatScene } from './scenes/individual-chat-scene';
 import { LoginScene } from './scenes/login-scene';
+import { SignupScene } from './scenes/signup-scene';
 
 function App(): JSX.Element {
 
@@ -24,6 +25,7 @@ function App(): JSX.Element {
         initialRouteName="LoginScene"
         screenOptions={{ headerShown: false }}>
         <Stack.Screen name="LoginScene" component={LoginScene} />
+        <Stack.Screen name="SignupScene" component={SignupScene} />
         <Stack.Screen name="MainScene" component={MainScene} />
         <Stack.Screen name="IndividualChatScene" component={IndividualChatScene} />
       </Stack.Navigator>

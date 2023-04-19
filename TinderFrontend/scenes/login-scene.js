@@ -51,7 +51,7 @@ export const LoginScene = () => {
             Don't have an account?{' '}
             <Text
               style={styles.signUpText}
-              onPress={() => navigation.navigate('SignupScreen')}>
+              onPress={() => navigation.navigate('SignupScene')}>
               Sign Up for one!
             </Text>
           </Text>
