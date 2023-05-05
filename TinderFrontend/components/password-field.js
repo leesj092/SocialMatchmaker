@@ -19,7 +19,7 @@ export const PasswordField = props => {
       <Ionicons
         style={styles.eyeIcon}
         name={passwordVisible ? 'eye-off-outline' : 'eye-outline'}
-        size={styles.eyeIcon.size}
+        size={20}
         onPress={() => setPasswordVisible(!passwordVisible)}
       />
     </View>
@@ -51,6 +51,5 @@ const styles = StyleSheet.create({
   },
   eyeIcon: {
     padding: "5%",
-    size: 20,
   },
 });
