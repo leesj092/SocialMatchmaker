@@ -3,13 +3,13 @@ import {useEffect} from 'react';
 import {TextInput, StyleSheet, View} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
-export const ProfileTextfield = ({iconName, setValue, value, placeholder}) => {
+export const ProfileTextfield = ({iconName, setValue, value, placeholder, width}) => {
   let editable = true;
   let background = 'white';
   let iconColor = 'gray';
 
   return (
-    <View style={{...styles.fieldContainer, backgroundColor: background}}>
+    <View style={{...styles.fieldContainer, backgroundColor: background, width:width}}>
       <Ionicons
         name={iconName}
         size={styles.icon.size}
@@ -47,7 +47,6 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     marginVertical: 8,
-    width:"85%"
   },
   icon: {
     padding: 10,

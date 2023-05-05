@@ -30,6 +30,7 @@ export const EditProfileModal = (props) => {
               value={props.name}
               setValue={props.setName}
               placeholder="Name"
+              width="100%"
             />
 
             <ProfileTextfield
@@ -37,6 +38,7 @@ export const EditProfileModal = (props) => {
               value={props.age}
               setValue={props.setAge}
               placeholder="Age"
+              width="100%"
             />
 
             <ProfileTextfield
@@ -44,6 +46,7 @@ export const EditProfileModal = (props) => {
               value={props.gender}
               setValue={props.setGender}
               placeholder="Gender"
+              width="100%"
             />
 
             <ProfileTextfield
@@ -51,6 +54,7 @@ export const EditProfileModal = (props) => {
               value={props.job}
               setValue={props.setJob}
               placeholder="Job"
+              width="100%"
             />
 
             <ProfileTextfield
@@ -58,6 +62,7 @@ export const EditProfileModal = (props) => {
               value={props.hobbies}
               setValue={props.setHobbies}
               placeholder="Hobbies"
+              width="100%"
             />
           </View>
 

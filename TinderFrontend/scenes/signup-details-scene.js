@@ -30,6 +30,7 @@ export const SignupDetailsScene = () => {
                 value={name}
                 setValue={setName}
                 placeholder="Name"
+                width="85%"
             />
 
             <ProfileTextfield
@@ -37,6 +38,7 @@ export const SignupDetailsScene = () => {
                 value={age}
                 setValue={setAge}
                 placeholder="Age"
+                width="85%"
             />
 
             <ProfileTextfield
@@ -44,6 +46,7 @@ export const SignupDetailsScene = () => {
                 value={gender}
                 setValue={setGender}
                 placeholder="Gender"
+                width="85%"
             />
 
             <ProfileTextfield
@@ -51,6 +54,7 @@ export const SignupDetailsScene = () => {
                 value={job}
                 setValue={setJob}
                 placeholder="Job"
+                width="85%"
             />
 
             <ProfileTextfield
@@ -58,6 +62,7 @@ export const SignupDetailsScene = () => {
                 value={hobbies}
                 setValue={setHobbies}
                 placeholder="Hobbies"
+                width="85%"
             />
 
             <TouchableOpacity style={buttonEnabled ? styles.signupButtonActivated : styles.signupButton} onPress={signUp} disabled={!buttonEnabled}>
@@ -90,6 +95,7 @@ const styles = StyleSheet.create({
       opacity: 0.5,
     },
     signupButtonActivated: {
+      marginTop: "5%",
       backgroundColor: "pink",
       borderRadius: 30,
       width: 340,
