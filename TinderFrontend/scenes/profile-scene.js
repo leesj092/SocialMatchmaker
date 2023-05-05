@@ -10,6 +10,11 @@ import { EditProfileModal } from '../components/edit-profile-modal';
 export const ProfileScene = () => {
     const navigation = useNavigation();
     const [modalVisible, setModalVisible] = useState(false);
+    const [name, setName] = useState("Ming Loh");
+    const [age, setAge] = useState("23");
+    const [gender, setGender] = useState("Male");
+    const [job, setJob] = useState("Student, Freelance programmer");
+    const [hobbies, setHobbies] = useState("Swimming, Hiking, Playing poker");
 
     const logout = () => {
         navigation.navigate("LoginScene");
@@ -32,11 +37,11 @@ export const ProfileScene = () => {
                 </View>
             </View>
             <View style={styles.middleBox}>
-                <ProfileInfo title="Name" value="Ming Loh"></ProfileInfo>
-                <ProfileInfo title="Age" value="23"></ProfileInfo>
-                <ProfileInfo title="Gender" value="Male"></ProfileInfo>
-                <ProfileInfo title="Job" value="Student, Freelance programmer"></ProfileInfo>
-                <ProfileInfo title="Hobbies" value="Swimming, Hiking, Playing poker"></ProfileInfo>
+                <ProfileInfo title="Name" value={name}></ProfileInfo>
+                <ProfileInfo title="Age" value={age}></ProfileInfo>
+                <ProfileInfo title="Gender" value={gender}></ProfileInfo>
+                <ProfileInfo title="Job" value={job}></ProfileInfo>
+                <ProfileInfo title="Hobbies" value={hobbies}></ProfileInfo>
             </View>
             <View style={styles.bottomBox}>
                 <TouchableOpacity
@@ -48,7 +53,20 @@ export const ProfileScene = () => {
             </View>
         </SafeAreaView>
 
-        <EditProfileModal modalVisible={modalVisible} setModalVisible={setModalVisible}/>
+        <EditProfileModal 
+            modalVisible={modalVisible} 
+            setModalVisible={setModalVisible}
+            name={name}
+            age={age}
+            gender={gender}
+            job={job}
+            hobbies={hobbies}
+            setName={setName}
+            setAge={setAge}
+            setGender={setGender}
+            setJob={setJob}
+            setHobbies={setHobbies}
+        />
         </>
     );
 };

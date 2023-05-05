@@ -32,31 +32,36 @@ export const EditProfileModal = (props) => {
           <View style={{width: '100%'}}>
             <ProfileTextfield
               iconName="person"
-              value="Ming Loh"
+              value={props.name}
+              setValue={props.setName}
               placeholder="Name"
             />
 
             <ProfileTextfield
               iconName="calendar"
-              value="23"
+              value={props.age}
+              setValue={props.setAge}
               placeholder="Age"
             />
 
             <ProfileTextfield
               iconName="transgender"
-              value="Male"
+              value={props.gender}
+              setValue={props.setGender}
               placeholder="Gender"
             />
 
             <ProfileTextfield
               iconName="briefcase"
-              value="Student"
+              value={props.job}
+              setValue={props.setJob}
               placeholder="Job"
             />
 
             <ProfileTextfield
               iconName="game-controller"
-              value="Swimming, Hiking, Playing poker"
+              value={props.hobbies}
+              setValue={props.setHobbies}
               placeholder="Hobbies"
             />
           </View>

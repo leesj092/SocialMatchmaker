@@ -16,7 +16,10 @@ export const ProfileTextfield = ({iconName, setValue, value, placeholder}) => {
         style={{...styles.icon, color: iconColor}}
       />
       <TextInput
-        style={styles.input} 
+        style={styles.input}
+        onChangeText={v => {
+          setValue(v);
+        }}
         defaultValue={value}
         editable={editable}
         placeholder={placeholder}
