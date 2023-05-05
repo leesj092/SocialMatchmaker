@@ -1,19 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
     SafeAreaView, StyleSheet, Text, TouchableOpacity, View, Image
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { ProfileInfo } from '../components/profile-info';
+import { EditProfileModal } from '../components/edit-profile-modal';
 
 export const ProfileScene = () => {
     const navigation = useNavigation();
+    const [modalVisible, setModalVisible] = useState(false);
 
     const logout = () => {
         navigation.navigate("LoginScene");
     }
 
     return (
+        <>
         <SafeAreaView style={styles.entireScene}>
             <View style={styles.topBox}>
                 <View style={styles.settingsIcon}>
@@ -23,7 +26,7 @@ export const ProfileScene = () => {
                 </View>
                 <Image style={styles.profilePic} source={require('../images/sample_person.jpeg')} />
                 <View style={styles.editIcon}>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => setModalVisible(!modalVisible)}>
                         <Ionicons name="create-outline" size={40}></Ionicons>
                     </TouchableOpacity>
                 </View>
@@ -44,6 +47,9 @@ export const ProfileScene = () => {
                 </TouchableOpacity>
             </View>
         </SafeAreaView>
+
+        <EditProfileModal modalVisible={modalVisible} setModalVisible={setModalVisible}/>
+        </>
     );
 };
 
