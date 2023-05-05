@@ -14,6 +14,7 @@ import { MainScene } from './scenes/main-scene';
 import { IndividualChatScene } from './scenes/individual-chat-scene';
 import { LoginScene } from './scenes/login-scene';
 import { SignupScene } from './scenes/signup-scene';
+import { SignupDetailsScene } from './scenes/signup-details-scene';
 
 function App(): JSX.Element {
 
@@ -28,6 +29,7 @@ function App(): JSX.Element {
         <Stack.Screen name="SignupScene" component={SignupScene} />
         <Stack.Screen name="MainScene" component={MainScene} />
         <Stack.Screen name="IndividualChatScene" component={IndividualChatScene} />
+        <Stack.Screen name="SignupDetailsScene" component={SignupDetailsScene} />
       </Stack.Navigator>
     </NavigationContainer>
   );

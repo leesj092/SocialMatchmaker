@@ -7,14 +7,14 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import { ProfileInfo } from '../components/profile-info';
 import { EditProfileModal } from '../components/edit-profile-modal';
 
-export const ProfileScene = () => {
+export const ProfileScene = (props) => {
     const navigation = useNavigation();
     const [modalVisible, setModalVisible] = useState(false);
-    const [name, setName] = useState("Ming Loh");
-    const [age, setAge] = useState("23");
-    const [gender, setGender] = useState("Male");
-    const [job, setJob] = useState("Student, Freelance programmer");
-    const [hobbies, setHobbies] = useState("Swimming, Hiking, Playing poker");
+    const [name, setName] = useState(props.name);
+    const [age, setAge] = useState(props.age);
+    const [gender, setGender] = useState(props.gender);
+    const [job, setJob] = useState(props.job);
+    const [hobbies, setHobbies] = useState(props.hobbies);
 
     const logout = () => {
         navigation.navigate("LoginScene");
