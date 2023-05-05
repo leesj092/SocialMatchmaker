@@ -18,11 +18,6 @@ export const EditProfileModal = (props) => {
       <View style={styles.darkenedBackgroundView} />
       <KeyboardAvoidingView behavior="padding" style={styles.centeredView}>
         <View style={styles.modalView}>
-          <TouchableOpacity
-            onPress={() => props.setModalVisible(false)}
-            style={styles.closeButtonContainer}>
-            <Ionicons name="close" size={25} />
-          </TouchableOpacity>
           <TouchableOpacity style={styles.imageContainer}>
             <Image style={styles.image} source={require('../images/sample_person.jpeg')}/>
             <View style={styles.editTextContainer}>
