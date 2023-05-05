@@ -1,19 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
     SafeAreaView, StyleSheet, Text, TouchableOpacity, View, Image
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { ProfileInfo } from '../components/profile-info';
+import { EditProfileModal } from '../components/edit-profile-modal';
 
-export const ProfileScene = () => {
+export const ProfileScene = (props) => {
     const navigation = useNavigation();
+    const [modalVisible, setModalVisible] = useState(false);
+    const [name, setName] = useState(props.name);
+    const [age, setAge] = useState(props.age);
+    const [gender, setGender] = useState(props.gender);
+    const [job, setJob] = useState(props.job);
+    const [hobbies, setHobbies] = useState(props.hobbies);
 
     const logout = () => {
         navigation.navigate("LoginScene");
     }
 
     return (
+        <>
         <SafeAreaView style={styles.entireScene}>
             <View style={styles.topBox}>
                 <View style={styles.settingsIcon}>
@@ -23,17 +31,17 @@ export const ProfileScene = () => {
                 </View>
                 <Image style={styles.profilePic} source={require('../images/sample_person.jpeg')} />
                 <View style={styles.editIcon}>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => setModalVisible(!modalVisible)}>
                         <Ionicons name="create-outline" size={40}></Ionicons>
                     </TouchableOpacity>
                 </View>
             </View>
             <View style={styles.middleBox}>
-                <ProfileInfo title="Name" value="Ming Loh"></ProfileInfo>
-                <ProfileInfo title="Age" value="23"></ProfileInfo>
-                <ProfileInfo title="Gender" value="Male"></ProfileInfo>
-                <ProfileInfo title="Job" value="Student, Freelance programmer"></ProfileInfo>
-                <ProfileInfo title="Hobbies" value="Swimming, Hiking, Playing poker"></ProfileInfo>
+                <ProfileInfo title="Name" value={name}></ProfileInfo>
+                <ProfileInfo title="Age" value={age}></ProfileInfo>
+                <ProfileInfo title="Gender" value={gender}></ProfileInfo>
+                <ProfileInfo title="Job" value={job}></ProfileInfo>
+                <ProfileInfo title="Hobbies" value={hobbies}></ProfileInfo>
             </View>
             <View style={styles.bottomBox}>
                 <TouchableOpacity
@@ -44,6 +52,22 @@ export const ProfileScene = () => {
                 </TouchableOpacity>
             </View>
         </SafeAreaView>
+
+        <EditProfileModal 
+            modalVisible={modalVisible} 
+            setModalVisible={setModalVisible}
+            name={name}
+            age={age}
+            gender={gender}
+            job={job}
+            hobbies={hobbies}
+            setName={setName}
+            setAge={setAge}
+            setGender={setGender}
+            setJob={setJob}
+            setHobbies={setHobbies}
+        />
+        </>
     );
 };
 

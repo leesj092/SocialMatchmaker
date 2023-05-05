@@ -9,7 +9,7 @@ import { ChatScene } from './chat-scene';
 import { PeopleScene } from './people-scene';
 import { ProfileScene } from './profile-scene';
 
-export const MainScene = () => {
+export const MainScene = (props) => {
 
     const Tab = createBottomTabNavigator();
 
@@ -47,7 +47,13 @@ export const MainScene = () => {
             />
             <Tab.Screen
                 name="Profile"
-                component={ProfileScene}
+                children={()=><ProfileScene 
+                    name={props.route.params.name} 
+                    age={props.route.params.age}
+                    gender={props.route.params.gender}
+                    job={props.route.params.job}
+                    hobbies={props.route.params.hobbies}
+                />}
                 options={{ headerShown: false }}
             />
         </Tab.Navigator>

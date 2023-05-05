@@ -67,7 +67,7 @@ export const SignupScene = () => {
   const signUp = async () => {
     setButtonEnabled(false);
     setIsLoading(true);
-    navigation.navigate("MainScene");
+    navigation.navigate("SignupDetailsScene");
   };
 
   useEffect(() => {
